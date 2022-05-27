@@ -31,7 +31,7 @@ padding: 20px;
 ul{
    
     display: grid;
-    grid-template-columns: 50% 50%;
+    grid-template-columns: 45% 45%;
     grid-template-rows: 375px 375px;
     gap: 30px;
     justify-content: center;
@@ -98,7 +98,7 @@ padding-bottom: 60px;}
         ul{
    
             display: grid;
-            grid-template-columns: 50% 50%;
+            grid-template-columns: 45% 45%;
             grid-template-rows: 300px 300px;
             gap: 30px;
             justify-content: center;
