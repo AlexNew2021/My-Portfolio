@@ -6,6 +6,8 @@ font-family: 'Montserrat', sans-serif;
 
 }
 
+
+
 *::before,
 *::after {
 	box-sizing: border-box;
@@ -30,43 +32,21 @@ html{scroll-behavior: smooth;   }
 
 .header{
 position: relative;
-
+display: flex;
+flex-direction: column;
+align-items: center;
+justify-content: center;
 
 width: 100%;
-padding: 50px 0px 300px 0px;
+height: 100vh;
 /* background-color: #536878;
-
 background-image: url("./../img/header_img/bacground_header.jpg") ; */
 background-size: cover;
 background-position: center;
 
 
 
-
 }
-
-
-.menu_li{
-    box-shadow: none;
-}
-.menu_list{
-    display: flex;
-    justify-content: flex-end;
-    padding-right: 50px;
-    padding-left: 50px;
-    
-    padding-bottom: 50px;
-}
-
-.menu_link_active, .menu_link{
-    padding: 0px;
-    background: none;
-    box-shadow: none;
-    color:#FFFFFF;
-}
-
-
-
 
 .header h1{
 font-family: 'Montserrat';
@@ -77,7 +57,6 @@ line-height: 130%;
 text-align: center;
 color: #FFFFFF;
 padding-bottom: 25px;
-padding-top: 150px;
 }
 
 .header p{ 
@@ -94,7 +73,7 @@ color: #FFFFFF;
 }
 
 
-.scroll_botton{
+.header img{
 
 
 width: 48px;
@@ -103,7 +82,6 @@ position: absolute;
 bottom: 30px;
 left: 50%; 
 transform: translate(-50%,0) 
-
 }
 
 .portfolio{
@@ -131,7 +109,6 @@ ul{
     display: grid;
     grid-template-columns: 540px 540px;
     grid-template-rows: 375px 375px;
-    justify-content: center;
     gap: 30px;
     list-style-type: none;
     
@@ -156,7 +133,7 @@ ul p:hover{color: darkgreen; }
 li{
     
     transition: transform 0.4s ease-in;
-    box-shadow: 0px 10px 40px rgba(126, 155, 189, 0.80);    
+    box-shadow: 0px 10px 40px rgba(126, 155, 189, 0.35);    
 }
 
 li a{
@@ -325,7 +302,7 @@ padding-left: 30px;    }
     
 }
 
-.section .main_container{
+.main_container{
     max-width: 1110px;
     margin-left: auto;
     margin-right: auto;
@@ -394,8 +371,4 @@ span{
     color: red;
     font-weight: 400;
     font-size: 16px;
-}
-
-.button_mobile{
-    display: none;
 }
