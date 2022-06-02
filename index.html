@@ -7,6 +7,7 @@
     <title>My Portfolio</title>
     <link rel="stylesheet" href="./css/style.css">
     <link rel="stylesheet" href="./css/media.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" integrity="sha512-1cK78a1o+ht2JcaW6g8OXYwqpev9+6GqOkz9xmBN9iUUhIndKtxwILGWYOSibOKjLsEdjyjZvYDq/cZwNeak0w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet"> 
@@ -14,8 +15,29 @@
 
 </head>
 <body>
+    
+    <header class="header" id="header">
+    
+    <nav id="menu_nav"  class="menu " >
+        <ul class="menu_list" >
+            <li  class="menu_li"><a href="#!" class="menu_link_active">Home</li></a>
+            <li  class="menu_li"><a href="#portfolio" class="menu_link">Works</li></a>
+            <li  class="menu_li"><a href="#!"  class="menu_link">Services</li></a>
+            <li  class="menu_li"><a href="#!" class="menu_link">About</li></a>
+            <li class="menu_li"><a href="#contacts" class="menu_link" >Contact</li></a>
 
-<header class="header" id="header">
+            
+        </ul>
+
+        <button id="button_mobile_change" class="button_mobile">
+
+            <img  id="change_pic_button_mobile" src="./img/media_img/open.svg" alt="button_mobile">
+        </button>
+
+    </nav>
+    
+    
+    
     <div>
         <h1>Alexey </h1>
         <p>фрилансер, Web-верстальщик, создание сайтов</p>
@@ -28,6 +50,9 @@
 <section class="portfolio" id="portfolio" >
 <div class="main_container">
     <h2>Портфолио</h2>
+    <div data-aos="flip-left"
+    data-aos-easing="ease-out-cubic"
+    data-aos-duration="2000">
 
 <ul>
 <li  ><a href="forest_travel.html"><img src="./img/Section_portfolio/Group 1.jpg" alt="pic">
@@ -48,18 +73,19 @@
 
 </ul>
 
+</div>
 
 </section>
 </main>
-<footer class="footer">
+<footer class="footer" id="contacts">
     <div class="main_container">
 
-     <div class="name" >
+     <div class="name" data-aos="flip-left">
          <h4>© Alexey </h4>
      <p>HTML верстка и разработка сайтов</p></div>
 
 
-     <div class="media">
+     <div class="media" data-aos="flip-right">
     <p>Мои профили в социальных сетях:</p>
      <ul>
      <li><a href="#">  <img src="./img/Footer/instagram 1.svg" alt="icon"> </a></li>
@@ -70,7 +96,7 @@
     </ul>
 </div>
 
-    <div class="order">
+    <div class="order" data-aos="zoom-out-up">
     <a href="#"> Связаться Вконтакте</a> 
     <p>Напишите мне, чтобы заказать или узнать стоимость верстки вашего проекта</p></div>
 
@@ -80,6 +106,10 @@
 </footer>
 
 <!-- library and script -->
+
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js" integrity="sha512-A7AYk1fGKX6S2SsHywmPkrnzTZHrgiVT7GcQkLGDe2ev0aWb8zejytzS8wjo7PGEXKqJOrjQ4oORtnimIRZBtw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script src="./library/jquery/jquery-3.6.0.min.js" ></script>
 
 <script src="./library/jquery/jquery-3.6.0.min.js" ></script>
 
